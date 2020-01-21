@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="particles.js"></script>
+	<title>Portfolio Theme | Website Example 5</title>
+
+	<!-- Small Icon that appears in the brower's tab -->
+	<!-- 1)Rel attribute: https://www.sitepoint.com/rel-html-attribute/ -->
+	<!-- 2)Icon:https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+	<!-- To ensure proper rendering and touch zooming in Mobile Phones-->t
+	<!-- Responsive meta tag:https://css-tricks.com/snippets/html/responsive-meta-tag/ -->
+	<!-- ViewPort-https://www.w3schools.com/css/css_rwd_viewport.asp -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- For Font-Aswesome Icons -->
+	<!-- Stylesheet for font collection-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Latest compiled and minified Bootstrap -->
+	<!-- Using Bootstrap via links -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Satisfy|Questrial|Roboto" rel="stylesheet">
+
+	<!-- CSS -->
+	<style type="text/css">
+
+		.bg-header {
+			background: url(img/bg-banner.jpg) no-repeat fixed ;
+			background-size: cover;
+			min-height: 800px;
+			position: relative;
+		}
+
+		#particles-js{
+			background-color: rgba(0,0,0,0.67);
+			min-height: 800px;
+
+		}
+
+		.container-fluid{
+			padding: 0;
+		}
+
+		.navbar {
+			padding: 3px 16px;
+
+
+		}
+
+		.navbar .navbar-nav .active{
+			font-size: 24px;
+			font-weight: 600;
+		}
+
+		.navbar-nav>li>a {
+			font-size: 20px;
+			font-weight:400 px;
+			color:#FFF;
+			outline:none;
+			font-family: consolas;
+		}
+
+		.active{
+			opacity: 0.8;
+
+		}
+		.navbar-nav .nav-item .nav-link:hover {
+			transition:  0.3s ease;
+		}
+
+
+		.navbar-nav .nav-item .nav-link:hover {
+			transition:  0.2s linear;
+			font-size:24px;
+		}
+		.scroll-to-about a i{
+
+			position: absolute;
+			left:49%;
+			bottom: -620px;
+			font-size: 30px;
+			color: #FFF;
+			width: 40px;
+			height: 40px;
+
+			line-height: 40px;
+			border-radius: 50%;
+			opacity: 0.6
+		}
+		.scroll-to-about a i:hover{
+
+			position: absolute;
+			left: 49%;
+			bottom: -620px;
+			font-size: 30px;
+			color: #FFF;
+			width: 40px;
+			height: 40px;
+
+			line-height: 40px;
+			border-radius: 50%;
+			opacity:1;
+		}
+		 .dp img{
+
+			position: absolute;
+			bottom: -350px;
+			left: 42.25%;
+			margin:0;
+			border:3px solid #FFF;
+			border-radius: 50%;
+
+		}
+		.intro{
+			text-align: center;
+			position: absolute;
+			bottom: -440px;
+			font-family: consolas;
+			left: 42%;
+			color: #FFF;
+			font-size:220%;
+
+
+		}
+		@keyframes type {
+			0%{
+				width:3ch;
+			}
+			100%{
+				width:16ch;
+			}
+		}
+		@keyframes blinking-cursor{
+			from,to{border-color: transparent;}
+			50%{border-color: #FFF}
+
+		}
+		h1 {
+			font-size: 50%;
+			animation:type 1.5s steps(13),blinking-cursor .75s step-end infinite ;
+			overflow: hidden;
+			border-right: .10em solid #FFF;
+			letter-spacing: .10em;
+			white-space: nowrap;
+			font-family: consolas;
+
+
+		}
+		.handles{
+			position: absolute;
+			bottom:-500px;
+			left:36.5%;
+			white-space: nowrap;
+		}
+		 li{
+			display: inline;
+			padding-left: 20px;
+			padding-right: 20px;
+
+
+		}
+		.navbar-brand img{
+			margin-left: 25px;
+		}
+
+
+	</style>
+</head>
+<!-- Applying IDs can help to link CSS with it:https://www.geeksforgeeks.org/html-id-attributes/ -->
+<!-- Using Bootstrap scrollspy :Linking scrolling to navbar contents: -->
+<!-- Link:https://www.w3schools.com/bootstrap/bootstrap_ref_js_scrollspy.asp -->
+<body id="partcles-js" data-spy="scroll" data-target=".navbar" data-offset="60" >
+	<!-- Header for Navbar and banner text -->
+	<!-- Containers in Bootstrap:https://getbootstrap.com/docs/3.4/css/#overview-container -->
+	<header class="container-fluid bg-header" id="home" >
+
+
+		<!-- For adding background color -->
+		<div class="header-bg-gray" id="particles-js">
+
+			<!-- Nav Bar Begins -->
+			<nav class="navbar  navbar-expand-md fixed-top" id="my-navbar">
+				<!-- Brand Logo -->
+				<a href="#home" class="navbar-brand"><img src="rsz_output-onlinepngtoolsv1.png" style="height: 60px; width:60px"></a>
+				<!-- Toggler Button
+				<button class="navbar-toggler" type="button" data-toggle="collapse"></button> -->
+				<!-- Navigation Links -->
+				<div class="collapse navbar-collapse" id="navbar-content">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#home" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about"class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#portfolio"class="nav-link">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a href="#testimonial"class="nav-link">Testimonials</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="dp">
+							<img src="final (1).jpg" style="height:170px; width:170px;">
+
+						</div>
+						<div class="intro">
+							I'm Pratyush<br>
+							<h1 class="typo">Web Developer</h1>
+
+						</div>
+						<div class="handles">
+							<ul>
+								<li>
+									<a href="https://www.facebook.com/pratyush.agarwal.562">
+										<img src="Circled_Facebook_svg-128.png" style="height: 30px; width: 30px;">
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/pratyush-agarwal-/">
+										<img src="Circled_Linkedin_svg-128.png" style="height: 30px; width: 30px;">
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/prat_101/?hl=en">
+										<img src="Circled_Instagram_svg-128.png"style="height: 30px; width: 30px;">
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="">
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="scroll-to-about ">
+						<a href="#about"><i class="fa fa-angle-down"></i></a>
+
+						</div>
+
+					</div>
+
+
+
+				</div>
+			</div>
+
+
+		</div>
+		<script type="text/javascript" src="particles.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+
+	</header>
+
+</body>
+<script type="text/javascript">
+ particlesJS("particles-js",<strong>particlesjs-config.json</strong>);
+</script>
+</html>
